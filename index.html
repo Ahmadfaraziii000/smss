@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open SMS App</title>
+</head>
+<body>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var recipientNumber = "+15876051222"; // Replace with the recipient's phone number
+    var smsIntent = "sms:" + recipientNumber;
+    
+    try {
+        window.location.href = smsIntent;
+    } catch (error) {
+        console.error('Failed to open SMS app:', error);
+    }
+});
+</script>
+
+</body>
+</html>
